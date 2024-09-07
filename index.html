@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .resume {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .resume-section {
+            margin-bottom: 20px;
+        }
+        .resume-section h3 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Resume Builder</h2>
+    <form id="resumeForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="education">Education:</label><br>
+        <textarea id="education" name="education" required></textarea><br><br>
+
+        <label for="experience">Experience:</label><br>
+        <textarea id="experience" name="experience" required></textarea><br><br>
+
+        <label for="skills">Skills:</label><br>
+        <textarea id="skills" name="skills" required></textarea><br><br>
+
+        <button type="button" onclick="createResume()">Create Resume</button>
+    </form>
+
+    <div id="resumeContainer"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
